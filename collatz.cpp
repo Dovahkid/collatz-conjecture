@@ -17,9 +17,10 @@ int main() {
 
 	cout << "Please enter a min a max space seperated: ";
 	cin >> min >> max;
+	cin.ignore();
 
 	for (unsigned long long i = min; i <= max; i++) {
-		ofstream fileOut("./collatz output/"+ to_string(i) + ".txt", ios_base::app);
+		ofstream fileOut("./collatz output/"+ to_string(i) + ".txt", ios_base::out);
 		
 		if (!fileOut) {
 			cerr << "File could not be loaded! " << to_string(i) << endl;
@@ -35,6 +36,8 @@ int main() {
 	cout << endl << "---------------" << endl;
 	cout << "     DONE!     " << endl;
 	cout << "---------------" << endl;
+
+	cin.get();
 
 	return 0;
 }
