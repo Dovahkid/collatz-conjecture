@@ -17,7 +17,7 @@ int main() {
 	int count = 0;
 	string folder;
 
-	cout << "Please enter a min a max space seperated: ";
+	cout << "Please enter a min and max space seperated: ";
 	cin >> min >> max;
 	cin.ignore();
 	
