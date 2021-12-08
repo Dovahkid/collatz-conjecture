@@ -1,5 +1,5 @@
 /*
- * g++ collatz.cpp -o collatz.exe -static
+ * g++ collatz.cpp -o collatz.exe -static -static-libgcc -static-libstdc++
  * */
 
 #include <iostream>
